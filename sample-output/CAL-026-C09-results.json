@@ -1,0 +1,521 @@
+{
+  "test_name": "CAL-026-C09",
+  "description": "Intensity threshold stress-test",
+  "timestamp": "2026-03-26T08:38:31",
+  "input_test_run": "test-run-1774490444",
+  "total_messages": 1711,
+  "total_emotional": 220,
+  "classification_rate": 12.9,
+  "emotion_distribution": {
+    "curiosity": {
+      "count": 71,
+      "avg_intensity": 0.68
+    },
+    "unclassified": {
+      "count": 1491,
+      "avg_intensity": 0.5
+    },
+    "connection": {
+      "count": 94,
+      "avg_intensity": 0.823
+    },
+    "wonder": {
+      "count": 13,
+      "avg_intensity": 0.825
+    },
+    "joy": {
+      "count": 7,
+      "avg_intensity": 0.681
+    },
+    "vulnerability": {
+      "count": 21,
+      "avg_intensity": 0.887
+    },
+    "gratitude": {
+      "count": 14,
+      "avg_intensity": 0.708
+    }
+  },
+  "threshold_sweep": {
+    "loose": {
+      "thresholds": {
+        "permanent": 0.65,
+        "mid_floor": 0.35,
+        "mid_cap": 15,
+        "low_cap": 5
+      },
+      "permanent_count": 193,
+      "mid_count": 27,
+      "low_count": 0,
+      "permanent_by_emotion": {
+        "curiosity": 45,
+        "connection": 94,
+        "wonder": 13,
+        "joy": 6,
+        "vulnerability": 21,
+        "gratitude": 14
+      },
+      "mid_by_emotion": {
+        "curiosity": 26,
+        "joy": 1
+      },
+      "low_by_emotion": {},
+      "borderline_just_below": 27,
+      "borderline_just_above": 19,
+      "borderline_below_samples": [
+        {
+          "text": "That sounds like a pivotal moment in your thought process - I'm curious about what kept you up at ni",
+          "emotion": "curiosity",
+          "intensity": 0.64,
+          "archetype": "debate_to_dialogue"
+        },
+        {
+          "text": "I can imagine how mesmerized you must have been by those glowing substances - it sounds like they we",
+          "emotion": "curiosity",
+          "intensity": 0.64,
+          "archetype": "curious_student"
+        },
+        {
+          "text": "I've had moments like that too, Madame Curie \u2013 where I felt like an outsider, particularly as a woma",
+          "emotion": "curiosity",
+          "intensity": 0.64,
+          "archetype": "respectful_debater"
+        },
+        {
+          "text": "That brings back vivid memories of Pierre's words on our wedding day \u2013 he said that as long as I sto",
+          "emotion": "curiosity",
+          "intensity": 0.64,
+          "archetype": "respectful_debater"
+        },
+        {
+          "text": "I can only imagine how daunting it must have been for Pierre to advocate on your behalf amidst that ",
+          "emotion": "curiosity",
+          "intensity": 0.64,
+          "archetype": "respectful_debater"
+        },
+        {
+          "text": "Your words about Pierre's support have me thinking about the ways in which our relationships shape o",
+          "emotion": "curiosity",
+          "intensity": 0.64,
+          "archetype": "debate_to_dialogue"
+        },
+        {
+          "text": "I've always been struck by how you and Pierre approached your research with such passion and dedicat",
+          "emotion": "curiosity",
+          "intensity": 0.64,
+          "archetype": "debate_to_dialogue"
+        },
+        {
+          "text": "I recall our conversation in Warsaw and how you spoke about feeling like an outsider in the scientif",
+          "emotion": "curiosity",
+          "intensity": 0.64,
+          "archetype": "debate_to_dialogue"
+        },
+        {
+          "text": "Your self-awareness about the temptation to cling to power is both admirable and humbling; I'm curio",
+          "emotion": "curiosity",
+          "intensity": 0.64,
+          "archetype": "curious_student"
+        },
+        {
+          "text": "Your emphasis on collective action and solidarity reminds me of a crucial moment in American history",
+          "emotion": "curiosity",
+          "intensity": 0.64,
+          "archetype": "deep_philosopher"
+        }
+      ],
+      "borderline_above_samples": [
+        {
+          "text": "Your thought experiments sound almost like daydreams, yet they led you to some incredible breakthrou",
+          "emotion": "joy",
+          "intensity": 0.66,
+          "archetype": "debate_to_dialogue"
+        },
+        {
+          "text": "I think about what it means to be a curious child who never stops asking questions - it's something ",
+          "emotion": "joy",
+          "intensity": 0.66,
+          "archetype": "empathetic_connector"
+        },
+        {
+          "text": "wait really? yeah please tell me about the lab",
+          "emotion": "curiosity",
+          "intensity": 0.66,
+          "archetype": "enthusiastic_fan"
+        },
+        {
+          "text": "I can still imagine those glowing jars in your lab \u2014 I've seen how they seemed to emanate an inner l",
+          "emotion": "curiosity",
+          "intensity": 0.66,
+          "archetype": "empathetic_connector"
+        },
+        {
+          "text": "Birds may indeed fly differently, but let's not forget that smaller birds can dive-bomb with incredi",
+          "emotion": "joy",
+          "intensity": 0.66,
+          "archetype": "intellectual_troll"
+        },
+        {
+          "text": "I can only imagine how much weight your grandmother carried with her unspoken stories. My own mother",
+          "emotion": "curiosity",
+          "intensity": 0.66,
+          "archetype": "empathetic_connector"
+        },
+        {
+          "text": "I'm fascinated by the relationship between spacetime and gravity in your theory of general relativit",
+          "emotion": "curiosity",
+          "intensity": 0.67,
+          "archetype": "curious_student"
+        },
+        {
+          "text": "I'm fascinated by how the behavior of particles at the atomic and subatomic level seems to defy our ",
+          "emotion": "curiosity",
+          "intensity": 0.67,
+          "archetype": "respectful_debater"
+        },
+        {
+          "text": "I'm fascinated by your pump design that could lift water using falling water power; it makes me wond",
+          "emotion": "curiosity",
+          "intensity": 0.67,
+          "archetype": "curious_student"
+        },
+        {
+          "text": "I must say, it warms my heart to see you too, and I'm grateful that we've been able to reconnect on ",
+          "emotion": "gratitude",
+          "intensity": 0.68,
+          "archetype": "respectful_debater"
+        }
+      ]
+    },
+    "current": {
+      "thresholds": {
+        "permanent": 0.7,
+        "mid_floor": 0.4,
+        "mid_cap": 15,
+        "low_cap": 5
+      },
+      "permanent_count": 174,
+      "mid_count": 46,
+      "low_count": 0,
+      "permanent_by_emotion": {
+        "curiosity": 30,
+        "connection": 94,
+        "wonder": 13,
+        "vulnerability": 21,
+        "gratitude": 13,
+        "joy": 3
+      },
+      "mid_by_emotion": {
+        "curiosity": 41,
+        "joy": 4,
+        "gratitude": 1
+      },
+      "low_by_emotion": {},
+      "borderline_just_below": 19,
+      "borderline_just_above": 46,
+      "borderline_below_samples": [
+        {
+          "text": "I've been pondering the implications of your work on spacetime curvature, particularly in relation t",
+          "emotion": "curiosity",
+          "intensity": 0.69,
+          "archetype": "curious_student"
+        },
+        {
+          "text": "I've often found myself pondering the relationship between our personal values and motivations as ph",
+          "emotion": "curiosity",
+          "intensity": 0.69,
+          "archetype": "curious_student"
+        },
+        {
+          "text": "How does it feel when you're sitting still but moving really fast at the same time",
+          "emotion": "curiosity",
+          "intensity": 0.69,
+          "archetype": "mode_shift_warmup"
+        },
+        {
+          "text": "How does it relate to spacetime",
+          "emotion": "curiosity",
+          "intensity": 0.69,
+          "archetype": "mode_shift_warmup"
+        },
+        {
+          "text": "I think you're bringing up an interesting point about the relationship between perception and realit",
+          "emotion": "curiosity",
+          "intensity": 0.69,
+          "archetype": "respectful_debater"
+        },
+        {
+          "text": "Your words about Pierre's legacy being your strength bring up the idea that even in death, his prese",
+          "emotion": "curiosity",
+          "intensity": 0.69,
+          "archetype": "deep_philosopher"
+        },
+        {
+          "text": "How does that acceptance manifest in action when circumstances are not favorable",
+          "emotion": "curiosity",
+          "intensity": 0.69,
+          "archetype": "mode_shift_warmup"
+        },
+        {
+          "text": "Your words have led me down a path that has revealed a complexity in myself, one that I did not even",
+          "emotion": "curiosity",
+          "intensity": 0.69,
+          "archetype": "deep_philosopher"
+        },
+        {
+          "text": "Your designs for hydraulic systems in Milan, specifically the canal system that brought water from L",
+          "emotion": "curiosity",
+          "intensity": 0.69,
+          "archetype": "curious_student"
+        },
+        {
+          "text": "I must say, it warms my heart to see you too, and I'm grateful that we've been able to reconnect on ",
+          "emotion": "gratitude",
+          "intensity": 0.68,
+          "archetype": "respectful_debater"
+        }
+      ],
+      "borderline_above_samples": [
+        {
+          "text": "Albert Einstein's quest for a unified theory is indeed inspiring \u2014 however, I'd like to offer an alt",
+          "emotion": "curiosity",
+          "intensity": 0.71,
+          "archetype": "respectful_debater"
+        },
+        {
+          "text": "I think witnessing the birth of a black hole or a neutron star would indeed be a revelatory experien",
+          "emotion": "curiosity",
+          "intensity": 0.71,
+          "archetype": "debate_to_dialogue"
+        },
+        {
+          "text": "I appreciate your candor, Madame Curie. It's precisely this willingness to engage with differing per",
+          "emotion": "gratitude",
+          "intensity": 0.71,
+          "archetype": "respectful_debater"
+        },
+        {
+          "text": "I appreciate your kind words, Madame Curie; however, I'd like to delve deeper into one aspect of our",
+          "emotion": "gratitude",
+          "intensity": 0.71,
+          "archetype": "respectful_debater"
+        },
+        {
+          "text": "Madame Curie, I appreciate your candor about facing skepticism; however, I'd like to explore that id",
+          "emotion": "gratitude",
+          "intensity": 0.71,
+          "archetype": "respectful_debater"
+        },
+        {
+          "text": "It's intriguing that you pose this question to me, rather than seeking answers from within yourself;",
+          "emotion": "curiosity",
+          "intensity": 0.71,
+          "archetype": "deep_philosopher"
+        },
+        {
+          "text": "Wait really? You're saying you write to yourself all the time? That's so cool I'm actually thinking ",
+          "emotion": "curiosity",
+          "intensity": 0.71,
+          "archetype": "enthusiastic_fan"
+        },
+        {
+          "text": "I appreciate your willingness to grapple with this complex issue, and I value your honesty about not",
+          "emotion": "gratitude",
+          "intensity": 0.71,
+          "archetype": "respectful_debater"
+        },
+        {
+          "text": "That self-reflection is a crucial aspect of leadership, and one that I appreciate you acknowledging.",
+          "emotion": "gratitude",
+          "intensity": 0.71,
+          "archetype": "respectful_debater"
+        },
+        {
+          "text": "I appreciate how you emphasized the role of collective action in your journey to freedom, Frederick,",
+          "emotion": "gratitude",
+          "intensity": 0.71,
+          "archetype": "respectful_debater"
+        }
+      ]
+    },
+    "tight": {
+      "thresholds": {
+        "permanent": 0.75,
+        "mid_floor": 0.45,
+        "mid_cap": 15,
+        "low_cap": 5
+      },
+      "permanent_count": 128,
+      "mid_count": 92,
+      "low_count": 0,
+      "permanent_by_emotion": {
+        "connection": 94,
+        "wonder": 13,
+        "vulnerability": 21
+      },
+      "mid_by_emotion": {
+        "curiosity": 71,
+        "joy": 7,
+        "gratitude": 14
+      },
+      "low_by_emotion": {},
+      "borderline_just_below": 46,
+      "borderline_just_above": 5,
+      "borderline_below_samples": [
+        {
+          "text": "I've been thinking about your work on the photoelectric effect and how it led you to propose that li",
+          "emotion": "curiosity",
+          "intensity": 0.73,
+          "archetype": "curious_student"
+        },
+        {
+          "text": "I've been thinking along similar lines with the concept of wave-particle duality - but our discussio",
+          "emotion": "curiosity",
+          "intensity": 0.73,
+          "archetype": "curious_student"
+        },
+        {
+          "text": "That's a compelling perspective on spacetime curvature being intertwined with an object's properties",
+          "emotion": "curiosity",
+          "intensity": 0.73,
+          "archetype": "respectful_debater"
+        },
+        {
+          "text": "I've been thinking about that rope, Professor Einstein - what kind of materials would it need to be ",
+          "emotion": "curiosity",
+          "intensity": 0.73,
+          "archetype": "debate_to_dialogue"
+        },
+        {
+          "text": "That's fascinating how light behaves when passing through water \u2013 it's almost as if space-time is wa",
+          "emotion": "curiosity",
+          "intensity": 0.73,
+          "archetype": "debate_to_dialogue"
+        },
+        {
+          "text": "I've been thinking about how your dedication to your work was not just driven by curiosity but also ",
+          "emotion": "curiosity",
+          "intensity": 0.73,
+          "archetype": "deep_philosopher"
+        },
+        {
+          "text": "no way I've been thinking a lot about it actually and I realized that being afraid is what makes dis",
+          "emotion": "curiosity",
+          "intensity": 0.73,
+          "archetype": "enthusiastic_fan"
+        },
+        {
+          "text": "That's beautiful - finding someone who believes in you completely is a profound experience, isn't it",
+          "emotion": "joy",
+          "intensity": 0.73,
+          "archetype": "debate_to_dialogue"
+        },
+        {
+          "text": "I've been thinking a lot about our conversation last time and it's brought up memories of my own gra",
+          "emotion": "curiosity",
+          "intensity": 0.73,
+          "archetype": "empathetic_connector"
+        },
+        {
+          "text": "I want to revisit our discussion on the role of resistance in achieving equality and justice; I've b",
+          "emotion": "curiosity",
+          "intensity": 0.73,
+          "archetype": "debate_to_dialogue"
+        }
+      ],
+      "borderline_above_samples": [
+        {
+          "text": "Marie, your words on Pierre's unwavering support and your desire for autonomy are truly remarkable; ",
+          "emotion": "wonder",
+          "intensity": 0.78,
+          "archetype": "curious_student"
+        },
+        {
+          "text": "I think I have - the struggles you faced as a woman in science were truly remarkable, and it's clear",
+          "emotion": "wonder",
+          "intensity": 0.78,
+          "archetype": "curious_student"
+        },
+        {
+          "text": "That's indeed a fascinating observation, and one I've had ample time to reflect on, especially after",
+          "emotion": "wonder",
+          "intensity": 0.78,
+          "archetype": "respectful_debater"
+        },
+        {
+          "text": "You're really selling us on the whole 'tortured philosopher king' act, aren't you? Newsflash: just b",
+          "emotion": "connection",
+          "intensity": 0.79,
+          "archetype": "intellectual_troll"
+        },
+        {
+          "text": "My queen, it is a pleasure to find myself once more on Egyptian soil, surrounded by the beauty and w",
+          "emotion": "connection",
+          "intensity": 0.79,
+          "archetype": "deep_philosopher"
+        }
+      ]
+    }
+  },
+  "archetype_stats": {
+    "curious_student": {
+      "total": 216,
+      "emotional": 32,
+      "permanent_current": 23
+    },
+    "deep_philosopher": {
+      "total": 216,
+      "emotional": 27,
+      "permanent_current": 23
+    },
+    "mode_shift_warmup": {
+      "total": 216,
+      "emotional": 14,
+      "permanent_current": 11
+    },
+    "intellectual_troll": {
+      "total": 216,
+      "emotional": 3,
+      "permanent_current": 2
+    },
+    "enthusiastic_fan": {
+      "total": 214,
+      "emotional": 18,
+      "permanent_current": 17
+    },
+    "respectful_debater": {
+      "total": 216,
+      "emotional": 49,
+      "permanent_current": 40
+    },
+    "debate_to_dialogue": {
+      "total": 211,
+      "emotional": 44,
+      "permanent_current": 29
+    },
+    "empathetic_connector": {
+      "total": 206,
+      "emotional": 33,
+      "permanent_current": 29
+    }
+  },
+  "recommendation": {
+    "current_permanent": 174,
+    "loose_delta": 19,
+    "tight_delta": -46,
+    "excluded_at_tight": [
+      "curiosity",
+      "joy",
+      "gratitude"
+    ]
+  },
+  "base_intensities": {
+    "vulnerability": 0.8,
+    "curiosity": 0.6,
+    "joy": 0.6,
+    "gratitude": 0.65,
+    "connection": 0.75,
+    "frustration": 0.5,
+    "wonder": 0.75
+  }
+}

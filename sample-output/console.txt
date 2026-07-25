@@ -1,0 +1,122 @@
+Loaded 1711 user messages from test-run-1774490444
+
+======================================================================
+PHASE 1: Classify all messages with current classifier
+======================================================================
+
+Classification rate: 220/1711 (12.9%)
+Unclassified: 1491
+
+Emotion distribution:
+  connection     :  94 hits  intensity avg=0.82 range=[0.79–0.89]
+  curiosity      :  71 hits  intensity avg=0.68 range=[0.62–0.73]
+  vulnerability  :  21 hits  intensity avg=0.89 range=[0.85–0.95]
+  gratitude      :  14 hits  intensity avg=0.71 range=[0.68–0.71]
+  wonder         :  13 hits  intensity avg=0.82 range=[0.78–0.85]
+  joy            :   7 hits  intensity avg=0.68 range=[0.62–0.73]
+
+======================================================================
+PHASE 2: Threshold Sweep
+======================================================================
+
+--- LOOSE (permanent ≥ 0.65, mid ≥ 0.35) ---
+  Permanent: 193 moments
+  Mid-range:  27 moments
+  Low:         0 moments
+  Borderline (±0.05 of 0.65): 27 just below, 19 just above
+
+  Permanent by emotion:
+    ● connection     :  94  (base=0.75)
+    ● curiosity      :  45  (base=0.6)
+    ○ frustration    :   0  (base=0.5)
+    ● gratitude      :  14  (base=0.65)
+    ● joy            :   6  (base=0.6)
+    ● vulnerability  :  21  (base=0.8)
+    ● wonder         :  13  (base=0.75)
+
+--- CURRENT (permanent ≥ 0.7, mid ≥ 0.4) ---
+  Permanent: 174 moments
+  Mid-range:  46 moments
+  Low:         0 moments
+  Borderline (±0.05 of 0.7): 19 just below, 46 just above
+
+  Permanent by emotion:
+    ● connection     :  94  (base=0.75)
+    ● curiosity      :  30  (base=0.6)
+    ○ frustration    :   0  (base=0.5)
+    ● gratitude      :  13  (base=0.65)
+    ● joy            :   3  (base=0.6)
+    ● vulnerability  :  21  (base=0.8)
+    ● wonder         :  13  (base=0.75)
+
+--- TIGHT (permanent ≥ 0.75, mid ≥ 0.45) ---
+  Permanent: 128 moments
+  Mid-range:  92 moments
+  Low:         0 moments
+  Borderline (±0.05 of 0.75): 46 just below, 5 just above
+
+  Permanent by emotion:
+    ● connection     :  94  (base=0.75)
+    ○ curiosity      :   0  (base=0.6)
+    ○ frustration    :   0  (base=0.5)
+    ○ gratitude      :   0  (base=0.65)
+    ○ joy            :   0  (base=0.6)
+    ● vulnerability  :  21  (base=0.8)
+    ● wonder         :  13  (base=0.75)
+
+======================================================================
+PHASE 3: Failure Mode Analysis
+======================================================================
+
+--- LOOSE promotes 19 extra moments to permanent ---
+  Samples (would be permanent at 0.65 but not at 0.70):
+    [joy           0.66] "Your thought experiments sound almost like daydreams, yet they led you..."
+    [joy           0.66] "I think about what it means to be a curious child who never stops aski..."
+    [curiosity     0.66] "wait really? yeah please tell me about the lab..."
+    [curiosity     0.66] "I can still imagine those glowing jars in your lab — I've seen how the..."
+    [joy           0.66] "Birds may indeed fly differently, but let's not forget that smaller bi..."
+    [curiosity     0.66] "I can only imagine how much weight your grandmother carried with her u..."
+    [curiosity     0.67] "I'm fascinated by the relationship between spacetime and gravity in yo..."
+    [curiosity     0.67] "I'm fascinated by how the behavior of particles at the atomic and suba..."
+
+--- TIGHT drops 46 moments from permanent ---
+  Samples (permanent at 0.70 but dropped to mid at 0.75):
+    [curiosity     0.73] "I've been thinking about your work on the photoelectric effect and how..."
+    [curiosity     0.73] "I've been thinking along similar lines with the concept of wave-partic..."
+    [curiosity     0.73] "That's a compelling perspective on spacetime curvature being intertwin..."
+    [curiosity     0.73] "I've been thinking about that rope, Professor Einstein - what kind of ..."
+    [curiosity     0.73] "That's fascinating how light behaves when passing through water – it's..."
+    [curiosity     0.73] "I've been thinking about how your dedication to your work was not just..."
+    [curiosity     0.73] "no way I've been thinking a lot about it actually and I realized that ..."
+    [joy           0.73] "That's beautiful - finding someone who believes in you completely is a..."
+
+======================================================================
+PHASE 4: Per-Archetype Emotional Signal Rate
+======================================================================
+
+Archetype                  Total  Emotional   Rate  Permanent
+------------------------------------------------------------
+  curious_student            216         32  14.8%         23
+  debate_to_dialogue         211         44  20.9%         29
+  deep_philosopher           216         27  12.5%         23
+  empathetic_connector       206         33  16.0%         29
+  enthusiastic_fan           214         18   8.4%         17
+  intellectual_troll         216          3   1.4%          2
+  mode_shift_warmup          216         14   6.5%         11
+  respectful_debater         216         49  22.7%         40
+
+======================================================================
+PHASE 5: Summary and Red Flags
+======================================================================
+
+  Current (0.70): 174 permanent moments
+  Loose (0.65):   19 more permanent (+10.9% change)
+  Tight (0.75):   46 fewer permanent (-26.4% change)
+
+  ⚠ TIGHT would completely exclude these from permanent: curiosity, joy, gratitude
+
+  ⚠ LOOSE would double joy permanent moments (3 → 6)
+
+
+Results saved to: results/CAL-026-C09-results.json
+Done.
